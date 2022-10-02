@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
 
 # Thesis are numbered and reach number 3200
 search_num = range(100,3200,100) 
@@ -50,8 +51,8 @@ for url in thesis_link_list:
 
 
   #Create a DB
-  """
-  import pandas as pd
+
+
 polimi_thesis = pd.DataFrame({"department" :department,
                               "course": course,
                               "date" : date,
@@ -59,8 +60,9 @@ polimi_thesis = pd.DataFrame({"department" :department,
                               "thesis_description":thesis_description,
                               "key_words":key_words,
                               "language":language})
-"""
+polimi_thesis.to_csv()
 
+"""
 #Create a .txt file
 
 with open('webscraping/texts.txt', 'w') as f:
@@ -68,4 +70,4 @@ with open('webscraping/texts.txt', 'w') as f:
     f.write(abstract.replace("\r\n", " "))
     f.write('\n')
     f.close()
-    
+"""
