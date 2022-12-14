@@ -1,4 +1,4 @@
-# PLM Embeddings for Improved Academic Topic Extraction
+# PLM Embeddings for Unsupervised Topic Extraction from Scientific Abstracts
 
 
 
@@ -27,7 +27,7 @@ nltk.download('universal_tagset')
 A prominent line of research in Topic Extraction is represented by Topic Models. nevertheless, such line of research presents significant shortcomings due to its foundation on probabilistic generative models.
 
 
-A new approach to Topic Extraction is explored by Meng et al. through [**TopCLus**](https://arxiv.org/abs/2202.04582), a model based on the clustering of embeddings obtained from Pre-trained language models - which is chosen as framework of reference for this research.
+A new approach to Topic Extraction is explored by Meng et al. through [**TopClus**](https://arxiv.org/abs/2202.04582), a model based on the clustering of embeddings obtained from Pre-trained language models - which is chosen as framework of reference for this research.
 
 
 Among the potential application fields, the chosen one for this research is that of Academic Abstracts. In particular, the datasetonsists of the Abstracts of the published papers of PhD candidates at Politecnico di Milano.
